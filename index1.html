@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1> random joke genrator</h1>
+    <br>
+    <p> press th
+        e button for  new joke!</p>
+    <p> character count:0</p>
+    <script>
+        let button=document.createElement("button")
+        button.id="btn";
+        button.innerText="get joke"
+        document.body.appendChild(button)
+
+        let para=document.createElement("p");
+        para.id="para";
+        document.body.appendChild(para);
+
+        document.getElementById("btn").onclick = function(){
+            document.getElementById("para").innerText="how do you genrate a random string put a windows user in front of vim and tell them to exit  ";
+
+        }
+        
+    
+    </script>
+    </div>
+</body>
+</html>
